@@ -1,0 +1,74 @@
+/* Background */
+.body_bg {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 400px;
+    border: 2px solid #e3e3e3;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Button box */
+.button_box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Links as buttons */
+.button_box a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Add Complaint button */
+.button_box a[href="addForm"] {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.button_box a[href="addForm"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,114,255,0.4);
+}
+
+/* View Complaints button */
+.button_box a[href="/view"] {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+.button_box a[href="/view"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(238,9,121,0.4);
+}
+
+/* Outline effect on hover */
+.button_box a:hover {
+    border: 2px solid #ffffff;
+}
